@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/img.png">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style type="text/tailwindcss"></style>
+    <link rel="stylesheet" href="./css/main.css">
+    <script>
+        AOS.init();
+    </script>
+    <title>Hamrozbek Nuriddinov</title>
+</head>
+
+<body class="bg-[#0a192f]">
+    <header class="border-bb fixed top-0 left-0 w-full z-50 bg-[#0a192f] pr-[20px] md:px-[40px]">
+        <div class="containers">
+            <div class="flex justify-between items-center">
+                <img src="./images/img.png" alt="logo img" width="90" height="90">
+
+                <!-- Hamburger tugma (faqat mobil) -->
+                <button id="menu-btn" class="md:hidden text-white text-[28px] focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+
+                <!-- ✅ Desktop Navbar (faqat md dan katta ekranlar) -->
+                <div class="hidden md:flex items-center gap-[25px]">
+                    <nav class="flex gap-[30px]">
+                        <a class="text-white hover:text-[#00C2B8] text-[19px] duration-300" href="#About">About</a>
+                        <a class="text-white hover:text-[#00C2B8] text-[19px] duration-300" href="#Skills">Skills</a>
+                        <a class="text-white hover:text-[#00C2B8] text-[19px] duration-300" href="#Portfolio">Portfolio</a>
+                        <a class="text-white hover:text-[#00C2B8] text-[19px] duration-300" href="#Contact">Contact</a>
+                    </nav>
+                    <div
+                        class="py-[5px] text-center border border-[#00C2B8] hover:bg-[#99ECE8] duration-300 w-[100px] rounded-md">
+                        <a href="./pdf/resumy.pdf" download class="text-[#00C2B8] text-[15px]">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ✅ Mobile Navbar (faqat kichik ekranlar uchun) -->
+        <div id="mobile-menu"
+            class="hidden fixed top-[80px] right-[20px] bg-[#0a192f] border border-[#00C2B8] rounded-[10px] w-[150px] p-5 z-50 shadow-lg md:hidden">
+            <nav class="flex flex-col gap-4">
+                <a class="text-white hover:text-[#00C2B8] text-[16px] duration-300" href="#About">About</a>
+                <a class="text-white hover:text-[#00C2B8] text-[16px] duration-300" href="#Skills">Skills</a>
+                <a class="text-white hover:text-[#00C2B8] text-[16px] duration-300" href="#Portfolio">Portfolio</a>
+                <a class="text-white hover:text-[#00C2B8] text-[16px] duration-300" href="#Contact">Contact</a>
+
+                <a href="./pdf/resumy.pdf" download
+                    class="block text-center border border-[#00C2B8] rounded-md text-[#00C2B8] hover:bg-[#99ECE8] text-[15px] py-[5px] duration-300">
+                    Resume
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="About" class="scroll-mt-[80px]">
+            <div class="containers flex flex-col md:flex-row md:flex justify-between items-center pt-[150px]">
+                <div class="w-full md:w-[580px] pl-[30px] pr-[20px] md:pl-[32px]">
+                    <h1
+                        class="font-bold w-[300px] mx-auto md:w-full md:mx-0 text-center md:text-start text-[25px] md:text-[45px] text-white flex flex-wrap items-center gap-[4px]">
+                        Hi, I'm
+                        <span class="flex gap-[1px] ml-2">
+                            <span style="--i:0">H</span>
+                            <span style="--i:1">a</span>
+                            <span style="--i:2">m</span>
+                            <span style="--i:3">r</span>
+                            <span style="--i:4">o</span>
+                            <span style="--i:5">z</span>
+                            <span style="--i:6">b</span>
+                            <span style="--i:7">e</span>
+                            <span style="--i:8">k</span>
+                            <span style="--i:9">.</span>
+                        </span>
+                    </h1>
+
+                    <span
+                        class="font-normal text-center md:text-start text-[15px] md:text-[25px] text-white tracking-[.4em] animate-drop-loop block">FRONTEND
+                        DEVELOPER</span>
+                    <p
+                        class="font-normal text-center md:text-start text-[13px] md:text-[17px] w-full md:w-[528px] text-white pt-2 pb-5">
+                        I am a frontend developer with
+                        experience in
+                        JavaScript, React, Tailwind CSS, HTML, SCSS, and Python. I have worked on various real-world
+                        projects, including portfolios, admin panels, and interactive web applications. I have strong
+                        teamwork skills and collaborate effectively using GitHub. I’m also comfortable working with
+                        clients and pay close attention to their needs. I am a responsible, creative, and technically
+                        skilled developer with leadership qualities, always aiming to bring innovation and
+                        professionalism to every project I work on.</p>
+                    <a href="tel:+998951883453"
+                        class="py-[5px] md:py-[8px] text-center block w-[120px] md:w-[150px] mx-auto md:mx-0 text-[#00C2B8] text-[14px] md:text-[18px] font-normal border-[1px] rounded-md border-[#00C2B8] hover:bg-[#99ECE8] duration-300">Contact
+                        Me</a>
+                </div>
+                <div>
+                    <img class="py-[50px] px-[30px] md:px-0 md:py-[100px] mx-auto md:mx-0 md:w-[550px] w-full md:h-[500px]"
+                        src="./images/frontend-removebg-preview.png" alt="img" width="550" height="500">
+                </div>
+            </div>
+        </section>
+        <section id="Skills" class="scroll-mt-[80px]">
+            <div class="containers py-[30px] md:py-[80px]">
+                <div class="flex items-center justify-center gap-[15px] md:gap-[32px] pb-[10px] md:pb-[24px]">
+                    <div class="bg-gray-700 h-[1px] w-[100px] md:w-[200px]"></div>
+                    <h2 class="text-white font-semibold text-[25px] md:text-[30px] text-center">Skills</h2>
+                    <div class="bg-gray-700 h-[1px] w-[100px] md:w-[200px]"></div>
+                </div>
+                <p
+                    class="text-white text-normal text-[15px] md:text-[18px] px-[30px] w-full md:w-[600px] text-center mx-auto">
+                    Here are a few main
+                    technologies I’ve been
+                    working with so far:</p>
+                <div class="flex flex-col justify-center gap-6 md:gap-20 md:flex md:flex-row pt-[30px] md:pt-10">
+                    <div class="space-y-6 mx-auto md:mx-0 w-full px-[30px] md:px-0 md:w-[500px]">
+                        <div>
+                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
+                                <span>HTML</span><span>100%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 h-2 rounded">
+                                <div class="bg-[#00f5d4] h-2 rounded w-full"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
+                                <span>JavaScript
+                                    (ES6+)</span><span>80%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 h-2 rounded">
+                                <div class="bg-[#00f5d4] h-2 rounded w-[80%]"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
+                                <span>Tailwind
+                                    Css</span><span>93%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 h-2 rounded">
+                                <div class="bg-[#00f5d4] h-2 rounded w-[93%]"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 w-full px-[30px] md:px-0 mx-auto md:mx-0 md:w-[500px]">
+                        <div>
+                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
+                                <span>Css</span><span>93%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 h-2 rounded">
+                                <div class="bg-[#00f5d4] h-2 rounded w-[93%]"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
+                                <span>React
+                                    Js</span><span>80%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 h-2 rounded">
+                                <div class="bg-[#00f5d4] h-2 rounded w-[80%]"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
+                                <span>Scss</span><span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 h-2 rounded">
+                                <div class="bg-[#00f5d4] h-2 rounded w-[90%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Portfolio" class="scroll-mt-[80px]">
+            <div class="containers py-[30px] md:py-[80px]">
+                <div class="flex items-center justify-center gap-[15px] md:gap-[32px] pb-[10px] md:pb-[24px]">
+                    <div class="bg-gray-700 h-[1px] w-[80px] md:w-[200px]"></div>
+                    <h2 class="text-white font-semibold text-[25px] md:text-[30px] text-center">Portfolio</h2>
+                    <div class="bg-gray-700 h-[1px] w-[80px] md:w-[200px]"></div>
+                </div>
+                <p class="text-white ext-[15px] md:text-[18px] px-[30px] w-full w-[600px] text-center mx-auto"> Here's a
+                    list of some projects I have
+                    done. I
+                    gained a lot of experience while doing these projects.</p>
+                <div
+                    class="w-full mx-auto flex justify-center items-center px-[30px] md:px-0 md:h-[400px] mt-10 md:mt-25">
+
+                    <!-- part 1 -->
+                    <div
+                        class="relative overflow-hidden rounded-tl-[20px] rounded-bl-[20px] w-[80px] md:w-[135px] group shadow-xl">
+                        <a href="https://agent-ten-amber.vercel.app/" target="_blank"
+                            class="p-2 md:p-6 mr-[-50px] md:mr-[-70px] bg-white block">
+                            <img src="./images/sign-in.png" alt="Project 1" class="w-full" />
+                        </a>
+                        <div
+                            class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white text-center p-1">
+                            <h2 class="text-[8px] md:text-[12px] font-normal md:font-bold text-[#00C2B8]">SIGN IN</h2>
+                            <p class="text-[6px] md:text-[12px] md:mt-2 leading-tight"></p>
+                            <a href="https://agent-ten-amber.vercel.app/" target="_blank"
+                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[3px] md:text-[10px] bg-[#00C2B8] border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-[#00C2B8] hover:text-[#00C2B8] rounded-[10px] transition">See
+                                project</a>
+                        </div>
+                    </div>
+
+                    <!-- part 2 -->
+                    <div
+                        class="relative overflow-hidden rounded-tl-[20px] rounded-bl-[20px] w-[150px] md:w-[175px] group shadow-xl">
+                        <a href="https://products-project-gamma.vercel.app/" target="_blank"
+                            class="p-3 md:p-7 mr-[-40px] md:mr-[-60px] bg-white block">
+                            <img src="./images/product-app.png" alt="Project 2" class="w-full" />
+                        </a>
+
+                        <div
+                            class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white text-center p-2">
+                            <h2 class="text-[8px] md:text-[14px] font-bold text-[#00C2B8]">PRODUCT PROJECT</h2>
+                            <p class="text-[5px] md:text-[12px] mt-2 leading-tight"></p>
+                            <a href="https://products-project-gamma.vercel.app/" target="_blank"
+                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[6px] md:text-[12px] bg-[#00C2B8] border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-[#00C2B8] hover:text-[#00C2B8] rounded-[10px] transition">See
+                                project</a>
+                        </div>
+                    </div>
+
+                    <!-- part 3 -->
+                    <div class="relative overflow-hidden rounded-[20px] w-[280px] md:w-[290px] group shadow-xl">
+                        <a href="https://papka-eight.vercel.app/" target="_blank" class="block p-2 md:p-9 bg-white">
+                            <img src="./images/product.png" alt="Project 3" class="w-full" />
+                        </a>
+
+                        <div
+                            class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white text-center p-2">
+                            <h2 class="text-[12px] md:text-[20px] font-bold text-[#00C2B8]">Work at the speed of thought
+                            </h2>
+                            <p class="text-[8px] md:text-[12px] mt-2 leading-tight"></p>
+                            <a href="https://papka-eight.vercel.app/" target="_blank"
+                                class="mt-[2px] md:mt-1 py-[1px] md:py-1 px-[4px] md:px-2 text-[8px] md:text-[15px] bg-[#00C2B8] border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-[#00C2B8] hover:text-[#00C2B8] rounded-[10px] transition">See
+                                project</a>
+                        </div>
+                    </div>
+
+                    <!-- part 4 -->
+                    <div
+                        class="relative overflow-hidden rounded-tr-[20px] rounded-br-[20px] w-[150px] md:w-[175px] group shadow-xl">
+                        <a href="https://countres-pink.vercel.app/" target="_blank"
+                            class="p-3 md:p-7 ml-[-40px] md:ml-[-60px] bg-white block">
+                            <img src="./images/countres.png" alt="Project 2" class="w-full" />
+                        </a>
+
+                        <div
+                            class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white text-center p-2">
+                            <h2 class="text-[8px] md:text-[14px] font-bold text-[#00C2B8]">Where in the world?</h2>
+                            <p class="text-[5px] md:text-[12px] mt-2 leading-tight"></p>
+                            <a href="https://countres-pink.vercel.app/" target="_blank"
+                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[6px] md:text-[12px] bg-[#00C2B8] border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-[#00C2B8] hover:text-[#00C2B8] rounded-[10px] transition">See
+                                project</a>
+                        </div>
+                    </div>
+
+                    <!-- part 5 -->
+                    <div
+                        class="relative overflow-hidden rounded-tr-[20px] rounded-br-[20px] w-[80px] md:w-[135px] group shadow-xl">
+                        <a href="https://uiu-xer.vercel.app/" target="_blank"
+                            class="p-2 md:p-6 ml-[-50px] md:ml-[-70px] bg-white block">
+                            <img src="./images/uiuxer.png" alt="Project 1" class="w-full" />
+                        </a>
+
+                        <div
+                            class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white text-center p-1">
+                            <h2 class="text-[8px] md:text-[12px] font-bold text-[#00C2B8]">UIUXer</h2>
+                            <p class="text-[6px] md:text-[12px] mt-2 leading-tight"></p>
+                            <a href="https://uiu-xer.vercel.app/" target="_blank"
+                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[3px] md:text-[10px] bg-[#00C2B8] border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-[#00C2B8] hover:text-[#00C2B8] rounded-[10px] transition">See
+                                project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Contact" class="scroll-mt-[100px] border-b-[1px] border-gray-700">
+            <div class="containers pt-[30px] md:pt-[60px] pb-[50px] md:pb-[100px]">
+                <div class="flex items-center justify-center gap-[15px] md:gap-[32px] pb-[10px] md:pb-[24px]">
+                    <div class="bg-gray-700 h-[1px] w-[90px] md:w-[200px]"></div>
+                    <h2 class="text-white font-semibold text-[25px] md:text-[30px] text-center">Contact</h2>
+                    <div class="bg-gray-700 h-[1px] w-[90px] md:w-[200px]"></div>
+                </div>
+                <p
+                    class="text-white text-center mx-auto text-[15px] md:text-[18px] px-[30px] md:px-0 w-full md:w-[600px] font-normal pb-8 md:pb-10">
+                    You will be able to
+                    contact
+                    with me after filling up this form with details given below and it's the best way you can receive
+                    quick response!</p>
+
+                <form id="contactForm" autocomplete="off"
+                    class="py-3 md:py-7 px-3 md:px-5 bg-white rounded-[10px] md:w-[400px] w-[340px] mx-auto">
+                    <label class="flex flex-col gap-2 font-bold text-[13px] md:text-[15px] text-gray-500 mb-3">Full name
+                        <input
+                            class="outline-none font-normal focus:border-[#00C2B8] pl-2 shadow-xl border-[1px] p-1 rounded-md"
+                            type="text" name="name" placeholder="Full name...">
+                    </label>
+                    <label class="flex flex-col gap-2 font-bold text-[13px] md:text-[15px] text-gray-500 mb-3">Phone
+                        number
+                        <input
+                            class="outline-none font-normal focus:border-[#00C2B8] pl-2 shadow-xl border-[1px] p-1 rounded-md"
+                            type="tel" name="phone" placeholder="+998 95 111 11 11">
+                    </label>
+                    <div class="text-center">
+                        <button type="submit"
+                            class="font-semibold text-[14px] md:text-[16px] text-gray-500 border-[1px] hover:bg-[#00C2B8] hover:text-white cursor-pointer py-[2px] md:py-1 w-[100px] md:w-[120px] rounded-md">
+                            Send
+                        </button>
+                    </div>
+                </form>
+
+                <div id="toast"
+                    class="hidden fixed top-4 right-4 bg-green-500 text-white px-4 py-2 rounded shadow-md z-50 transition">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="containers py-[20px] md:py-0">
+            <div class="flex justify-between items-center md:pr-0 pr-[20px]">
+                <img src="./images/img.png" alt="img" width="90" height="90">
+                <div class="flex flex-col md:flex-row gap-8 pt-[20px] md:pt-[30px]">
+                    <div class="text-center md:text-start">
+                        <span class="text-[11px] md:text-[15px] font-semibold text-white">STUDY PROGRAMS</span>
+                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-3">Mathematics</p>
+                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-2">English</p>
+                    </div>
+                    <div class="text-center md:text-start">
+                        <span class="text-[11px] md:text-[15px] font-semibold text-white">INTERESTING PROJECTS</span>
+                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-3">CodeBridge School</p>
+                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-2">VistaWave</p>
+                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-2">IApply</p>
+                    </div>
+                    <div class="text-center md:text-start">
+                        <span class="text-[11px] md:text-[15px] font-semibold text-white">LEGAL INFORMATION</span>
+                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-3">Privacy Policy</p>
+                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-2">Terms & Conditions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row md:gap-0 gap-4 justify-between items-center py-[30px] md:py-[40px]">
+                <p class="text-white text-[12px] md:text-[15px] font-normal">© 2025. All rights reserved.</p>
+                <div class="flex gap-5 items-center text-white">
+                    <a href="https://t.me/ruslanovich17" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-telegram" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nuriddinov18/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/nuriddinov_k2" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Hamrozbek" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

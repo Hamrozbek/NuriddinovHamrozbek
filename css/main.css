@@ -1,0 +1,97 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/livvic-v14-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/livvic-v14-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/livvic-v14-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/livvic-v14-latin-700.woff2') format('woff2');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Livvic", sans-serif;
+}
+
+.containers {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.border-bb {
+    border-bottom: 1px solid #1c3e63;
+    box-shadow: 0 10px 30px rgba(87, 146, 202, 0.6);
+}
+
+h1 span {
+    display: inline-block;
+    animation: wave 3s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 1s);
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes dropLoop {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+        filter: blur(7px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0px);
+        filter: blur(0px);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(50px);
+        filter: blur(6px);
+    }
+}
+
+.animate-drop-loop {
+    animation: dropLoop 10s ease-in-out infinite;
+}
