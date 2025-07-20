@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/img.png">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style type="text/tailwindcss"></style>
     <link rel="stylesheet" href="./css/main.css">
-    <script>
-        AOS.init();
-    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Hamrozbek Nuriddinov</title>
 </head>
 
-<body class="bg-[#0a192f]">
-    <header class="border-bb fixed top-0 left-0 w-full z-50 bg-[#0a192f] pr-[20px] md:px-[40px]">
+<body class="bg-[#000000]">
+    <header class="border-bb fixed top-0 left-0 w-full z-50 bg-[#000000] pr-[20px] md:px-[40px]">
         <div class="containers">
             <div class="flex justify-between items-center">
                 <img src="./images/img.png" alt="logo img" width="90" height="90">
@@ -32,14 +30,18 @@
                 <!-- ✅ Desktop Navbar (faqat md dan katta ekranlar) -->
                 <div class="hidden md:flex items-center gap-[25px]">
                     <nav class="flex gap-[30px]">
-                        <a class="text-white hover:text-[#00C2B8] text-[19px] duration-300" href="#About">About</a>
-                        <a class="text-white hover:text-[#00C2B8] text-[19px] duration-300" href="#Skills">Skills</a>
-                        <a class="text-white hover:text-[#00C2B8] text-[19px] duration-300" href="#Portfolio">Portfolio</a>
-                        <a class="text-white hover:text-[#00C2B8] text-[19px] duration-300" href="#Contact">Contact</a>
+                        <a class="text-white hover:text-gray-500 border-b border-b-transparent hover:border-b-gray-500 text-[19px] duration-300"
+                            href="#About">About</a>
+                        <a class="text-white hover:text-gray-500 border-b border-b-transparent hover:border-b-gray-500 text-[19px] duration-300"
+                            href="#Skills">Skills</a>
+                        <a class="text-white hover:text-gray-500 border-b border-b-transparent hover:border-b-gray-500 text-[19px] duration-300"
+                            href="#Portfolio">Portfolio</a>
+                        <a class="text-white hover:text-gray-500 border-b border-b-transparent hover:border-b-gray-500 text-[19px] duration-300"
+                            href="#Contact">Contact</a>
                     </nav>
                     <div
-                        class="py-[5px] text-center border border-[#00C2B8] hover:bg-[#99ECE8] duration-300 w-[100px] rounded-md">
-                        <a href="./pdf/resumy.pdf" download class="text-[#00C2B8] text-[15px]">Resume</a>
+                        class="py-[5px] text-center border border-white hover:bg-gray-300 duration-300 w-[100px] rounded-md">
+                        <a href="./pdf/resumy.pdf" download class="text-white hover:text-black text-[15px]">Resume</a>
                     </div>
                 </div>
             </div>
@@ -47,15 +49,15 @@
 
         <!-- ✅ Mobile Navbar (faqat kichik ekranlar uchun) -->
         <div id="mobile-menu"
-            class="hidden fixed top-[80px] right-[20px] bg-[#0a192f] border border-[#00C2B8] rounded-[10px] w-[150px] p-5 z-50 shadow-lg md:hidden">
+            class="hidden fixed top-[80px] right-[20px] bg-[#000000] border border-white rounded-[10px] w-[150px] p-5 z-50 shadow-lg md:hidden">
             <nav class="flex flex-col gap-4">
-                <a class="text-white hover:text-[#00C2B8] text-[16px] duration-300" href="#About">About</a>
-                <a class="text-white hover:text-[#00C2B8] text-[16px] duration-300" href="#Skills">Skills</a>
-                <a class="text-white hover:text-[#00C2B8] text-[16px] duration-300" href="#Portfolio">Portfolio</a>
-                <a class="text-white hover:text-[#00C2B8] text-[16px] duration-300" href="#Contact">Contact</a>
+                <a class="text-white hover:text-gray-500 text-[16px] duration-300" href="#About">About</a>
+                <a class="text-white hover:text-gray-500 text-[16px] duration-300" href="#Skills">Skills</a>
+                <a class="text-white hover:text-gray-500 text-[16px] duration-300" href="#Portfolio">Portfolio</a>
+                <a class="text-white hover:text-gray-500 text-[16px] duration-300" href="#Contact">Contact</a>
 
                 <a href="./pdf/resumy.pdf" download
-                    class="block text-center border border-[#00C2B8] rounded-md text-[#00C2B8] hover:bg-[#99ECE8] text-[15px] py-[5px] duration-300">
+                    class="block text-center border border-white rounded-md text-white hover:bg-gray-300 hover:text-black text-[15px] py-[5px] duration-300">
                     Resume
                 </a>
             </nav>
@@ -63,7 +65,7 @@
     </header>
 
     <main>
-        <section id="About" class="scroll-mt-[80px]">
+        <section id="About" class="scroll-mt-[80px] bg-[#000000]">
             <div class="containers flex flex-col md:flex-row md:flex justify-between items-center pt-[150px]">
                 <div class="w-full md:w-[580px] pl-[30px] pr-[20px] md:pl-[32px]">
                     <h1
@@ -82,7 +84,6 @@
                             <span style="--i:9">.</span>
                         </span>
                     </h1>
-
                     <span
                         class="font-normal text-center md:text-start text-[15px] md:text-[25px] text-white tracking-[.4em] animate-drop-loop block">FRONTEND
                         DEVELOPER</span>
@@ -97,7 +98,7 @@
                         skilled developer with leadership qualities, always aiming to bring innovation and
                         professionalism to every project I work on.</p>
                     <a href="tel:+998951883453"
-                        class="py-[5px] md:py-[8px] text-center block w-[120px] md:w-[150px] mx-auto md:mx-0 text-[#00C2B8] text-[14px] md:text-[18px] font-normal border-[1px] rounded-md border-[#00C2B8] hover:bg-[#99ECE8] duration-300">Contact
+                        class="py-[5px] md:py-[8px] text-center block w-[120px] md:w-[150px] mx-auto md:mx-0 text-white text-[14px] md:text-[18px] font-normal border-[1px] rounded-md border-white hover:bg-gray-300 hover:text-black duration-300">Contact
                         Me</a>
                 </div>
                 <div>
@@ -106,7 +107,7 @@
                 </div>
             </div>
         </section>
-        <section id="Skills" class="scroll-mt-[80px]">
+        <section id="Skills" class="scroll-mt-[80px] bg-[#000000]">
             <div class="containers py-[30px] md:py-[80px]">
                 <div class="flex items-center justify-center gap-[15px] md:gap-[32px] pb-[10px] md:pb-[24px]">
                     <div class="bg-gray-700 h-[1px] w-[100px] md:w-[200px]"></div>
@@ -118,71 +119,35 @@
                     Here are a few main
                     technologies I’ve been
                     working with so far:</p>
-                <div class="flex flex-col justify-center gap-6 md:gap-20 md:flex md:flex-row pt-[30px] md:pt-10">
-                    <div class="space-y-6 mx-auto md:mx-0 w-full px-[30px] md:px-0 md:w-[500px]">
-                        <div>
-                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
-                                <span>HTML</span><span>100%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 h-2 rounded">
-                                <div class="bg-[#00f5d4] h-2 rounded w-full"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
-                                <span>JavaScript
-                                    (ES6+)</span><span>80%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 h-2 rounded">
-                                <div class="bg-[#00f5d4] h-2 rounded w-[80%]"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
-                                <span>Tailwind
-                                    Css</span><span>93%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 h-2 rounded">
-                                <div class="bg-[#00f5d4] h-2 rounded w-[93%]"></div>
-                            </div>
-                        </div>
+                <div class="flex flex-wrap justify-center items-center gap-6 md:gap-20 md:flex md:flex-row pt-[30px] md:pt-10">
+                    <div class="text-white w-[90px] items-center flex flex-col">
+                        <img class="w-[35px] md:w-[65px] h-[50px] md:h-[80px]" src="./images/html.svg" alt="html img" width="65" height="80">
+                        <p class="text-white md:text-[18px] text-[13px]">HTML</p>
                     </div>
-
-                    <div class="space-y-6 w-full px-[30px] md:px-0 mx-auto md:mx-0 md:w-[500px]">
-                        <div>
-                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
-                                <span>Css</span><span>93%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 h-2 rounded">
-                                <div class="bg-[#00f5d4] h-2 rounded w-[93%]"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
-                                <span>React
-                                    Js</span><span>80%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 h-2 rounded">
-                                <div class="bg-[#00f5d4] h-2 rounded w-[80%]"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between mb-1 text-white text-[14px] md:text-[17px] font-semibold">
-                                <span>Scss</span><span>90%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 h-2 rounded">
-                                <div class="bg-[#00f5d4] h-2 rounded w-[90%]"></div>
-                            </div>
-                        </div>
+                    <div class="text-white w-[90px] items-center flex flex-col">
+                        <img class="w-[35px] md:w-[65px] h-[50px] md:h-[80px]" src="./images/scss.svg" alt="scss" width="65" height="80">
+                        <p class="text-white md:text-[18px] text-[13px]">Css</p>
+                    </div>
+                    <div class="text-white w-[90px] items-center flex flex-col">
+                        <img class="w-[35px] md:w-[65px] h-[50px] md:h-[80px]" src="./images/css.svg" alt="css" width="65" height="80">
+                        <p class="text-white md:text-[18px] text-[13px]">Scss</p>
+                    </div>
+                    <div class="text-white w-[90px] items-center flex flex-col">
+                        <img class="w-[35px] md:w-[65px] h-[50px] md:h-[80px]" src="./images/js.svg" alt="js" width="65" height="80">
+                        <p class="text-white md:text-[18px] text-[13px]">React Js</p>
+                    </div>
+                    <div class="text-white w-[90px] items-center flex flex-col">
+                        <img class="w-[35px] md:w-[65px] h-[40px] md:h-[70px]" src="./images/figma.svg" alt="figma" width="65" height="70">
+                        <p class="text-white md:text-[18px] text-[13px]">Figma</p>
+                    </div>
+                    <div class="text-white w-[100px] items-center flex flex-col">
+                        <img class="w-[55px] md:w-[85px] h-[50px] md:h-[80px]" src="./images/tailwendd.png" alt=" tailwendd" width="85" height="100">
+                        <p class="text-white md:text-[18px] text-[13px]">Tailwind Css</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="Portfolio" class="scroll-mt-[80px]">
+        <section id="Portfolio" class="scroll-mt-[80px] bg-[#000000]">
             <div class="containers py-[30px] md:py-[80px]">
                 <div class="flex items-center justify-center gap-[15px] md:gap-[32px] pb-[10px] md:pb-[24px]">
                     <div class="bg-gray-700 h-[1px] w-[80px] md:w-[200px]"></div>
@@ -205,10 +170,10 @@
                         </a>
                         <div
                             class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white text-center p-1">
-                            <h2 class="text-[8px] md:text-[12px] font-normal md:font-bold text-[#00C2B8]">SIGN IN</h2>
+                            <h2 class="text-[8px] md:text-[12px] font-normal md:font-bold text-white">SIGN IN</h2>
                             <p class="text-[6px] md:text-[12px] md:mt-2 leading-tight"></p>
                             <a href="https://agent-ten-amber.vercel.app/" target="_blank"
-                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[3px] md:text-[10px] bg-[#00C2B8] border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-[#00C2B8] hover:text-[#00C2B8] rounded-[10px] transition">See
+                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[3px] md:text-[10px] bg-gray-700 border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white rounded-[10px] transition">See
                                 project</a>
                         </div>
                     </div>
@@ -223,10 +188,10 @@
 
                         <div
                             class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white text-center p-2">
-                            <h2 class="text-[8px] md:text-[14px] font-bold text-[#00C2B8]">PRODUCT PROJECT</h2>
+                            <h2 class="text-[8px] md:text-[14px] font-bold text-white">PRODUCT PROJECT</h2>
                             <p class="text-[5px] md:text-[12px] mt-2 leading-tight"></p>
                             <a href="https://products-project-gamma.vercel.app/" target="_blank"
-                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[6px] md:text-[12px] bg-[#00C2B8] border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-[#00C2B8] hover:text-[#00C2B8] rounded-[10px] transition">See
+                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[6px] md:text-[12px] bg-gray-700 border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white rounded-[10px] transition">See
                                 project</a>
                         </div>
                     </div>
@@ -239,11 +204,11 @@
 
                         <div
                             class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white text-center p-2">
-                            <h2 class="text-[12px] md:text-[20px] font-bold text-[#00C2B8]">Work at the speed of thought
+                            <h2 class="text-[12px] md:text-[20px] font-bold text-white">Work at the speed of thought
                             </h2>
                             <p class="text-[8px] md:text-[12px] mt-2 leading-tight"></p>
                             <a href="https://papka-eight.vercel.app/" target="_blank"
-                                class="mt-[2px] md:mt-1 py-[1px] md:py-1 px-[4px] md:px-2 text-[8px] md:text-[15px] bg-[#00C2B8] border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-[#00C2B8] hover:text-[#00C2B8] rounded-[10px] transition">See
+                                class="mt-[2px] md:mt-1 py-[1px] md:py-1 px-[4px] md:px-2 text-[8px] md:text-[15px] bg-gray-700 border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white rounded-[10px] transition">See
                                 project</a>
                         </div>
                     </div>
@@ -258,10 +223,10 @@
 
                         <div
                             class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white text-center p-2">
-                            <h2 class="text-[8px] md:text-[14px] font-bold text-[#00C2B8]">Where in the world?</h2>
+                            <h2 class="text-[8px] md:text-[14px] font-bold text-white">Where in the world?</h2>
                             <p class="text-[5px] md:text-[12px] mt-2 leading-tight"></p>
                             <a href="https://countres-pink.vercel.app/" target="_blank"
-                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[6px] md:text-[12px] bg-[#00C2B8] border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-[#00C2B8] hover:text-[#00C2B8] rounded-[10px] transition">See
+                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[6px] md:text-[12px] bg-gray-700 border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white rounded-[10px] transition">See
                                 project</a>
                         </div>
                     </div>
@@ -276,17 +241,17 @@
 
                         <div
                             class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white text-center p-1">
-                            <h2 class="text-[8px] md:text-[12px] font-bold text-[#00C2B8]">UIUXer</h2>
+                            <h2 class="text-[8px] md:text-[12px] font-bold text-white">UIUXer</h2>
                             <p class="text-[6px] md:text-[12px] mt-2 leading-tight"></p>
                             <a href="https://uiu-xer.vercel.app/" target="_blank"
-                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[3px] md:text-[10px] bg-[#00C2B8] border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-[#00C2B8] hover:text-[#00C2B8] rounded-[10px] transition">See
+                                class="mt-[2px] md:mt-1 py-[1px] px-[4px] md:py-1 md:px-2 text-[3px] md:text-[10px] bg-gray-700 border-[1px] border-transparent hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white rounded-[10px] transition">See
                                 project</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="Contact" class="scroll-mt-[100px] border-b-[1px] border-gray-700">
+        <section id="Contact" class="scroll-mt-[100px] border-b-[1px] border-white bg-[#000000]">
             <div class="containers pt-[30px] md:pt-[60px] pb-[50px] md:pb-[100px]">
                 <div class="flex items-center justify-center gap-[15px] md:gap-[32px] pb-[10px] md:pb-[24px]">
                     <div class="bg-gray-700 h-[1px] w-[90px] md:w-[200px]"></div>
@@ -303,19 +268,17 @@
                 <form id="contactForm" autocomplete="off"
                     class="py-3 md:py-7 px-3 md:px-5 bg-white rounded-[10px] md:w-[400px] w-[340px] mx-auto">
                     <label class="flex flex-col gap-2 font-bold text-[13px] md:text-[15px] text-gray-500 mb-3">Full name
-                        <input
-                            class="outline-none font-normal focus:border-[#00C2B8] pl-2 shadow-xl border-[1px] p-1 rounded-md"
-                            type="text" name="name" placeholder="Full name...">
+                        <input class="outline-none font-normal pl-2 shadow-xl border-[1px] p-1 rounded-md" type="text"
+                            name="name" placeholder="Full name...">
                     </label>
                     <label class="flex flex-col gap-2 font-bold text-[13px] md:text-[15px] text-gray-500 mb-3">Phone
                         number
-                        <input
-                            class="outline-none font-normal focus:border-[#00C2B8] pl-2 shadow-xl border-[1px] p-1 rounded-md"
-                            type="tel" name="phone" placeholder="+998 95 111 11 11">
+                        <input class="outline-none font-normal pl-2 shadow-xl border-[1px] p-1 rounded-md" type="tel"
+                            name="phone" placeholder="+998 95 111 11 11">
                     </label>
                     <div class="text-center">
                         <button type="submit"
-                            class="font-semibold text-[14px] md:text-[16px] text-gray-500 border-[1px] hover:bg-[#00C2B8] hover:text-white cursor-pointer py-[2px] md:py-1 w-[100px] md:w-[120px] rounded-md">
+                            class="font-semibold text-[14px] md:text-[16px] text-gray-500 border-[1px] hover:bg-gray-700 hover:text-white cursor-pointer py-[2px] md:py-1 w-[100px] md:w-[120px] rounded-md">
                             Send
                         </button>
                     </div>
@@ -327,31 +290,10 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="containers py-[20px] md:py-0">
-            <div class="flex justify-between items-center md:pr-0 pr-[20px]">
-                <img src="./images/img.png" alt="img" width="90" height="90">
-                <div class="flex flex-col md:flex-row gap-8 pt-[20px] md:pt-[30px]">
-                    <div class="text-center md:text-start">
-                        <span class="text-[11px] md:text-[15px] font-semibold text-white">STUDY PROGRAMS</span>
-                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-3">Mathematics</p>
-                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-2">English</p>
-                    </div>
-                    <div class="text-center md:text-start">
-                        <span class="text-[11px] md:text-[15px] font-semibold text-white">INTERESTING PROJECTS</span>
-                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-3">CodeBridge School</p>
-                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-2">VistaWave</p>
-                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-2">IApply</p>
-                    </div>
-                    <div class="text-center md:text-start">
-                        <span class="text-[11px] md:text-[15px] font-semibold text-white">LEGAL INFORMATION</span>
-                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-3">Privacy Policy</p>
-                        <p class="text-[12px] md:text-[15px] font-normal text-white pt-2">Terms & Conditions</p>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row md:gap-0 gap-4 justify-between items-center py-[30px] md:py-[40px]">
-                <p class="text-white text-[12px] md:text-[15px] font-normal">© 2025. All rights reserved.</p>
+    <footer class="bg-[#000000]">
+        <div class="containers flex justify-between items-center pr-[20px] md:pr-0">
+            <img src="./images/img.png" alt="img" width="90" height="90">
+            <div class="flex flex-col md:flex-row md:gap-0 gap-4 justify-between items-center">
                 <div class="flex gap-5 items-center text-white">
                     <a href="https://t.me/ruslanovich17" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -385,12 +327,10 @@
             </div>
         </div>
     </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
+        AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="./js/main.js"></script>
